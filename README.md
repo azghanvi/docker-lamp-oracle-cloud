@@ -15,18 +15,18 @@ docker run -d -v /path/to/project:/var/www/localhost/htdocs/ -v /path/to/mysql/d
 ### Run you own image
 
 ```
-git clone https://github.com/azghanvi/docker-lamp-ssh-291m && cd docker-lamp-ssh-291m/
+git clone https://github.com/azghanvi/docker-lamp-oracle-cloud && cd docker-lamp-oracle-cloud/
 ```
 
 ### Build the image
 ```
-docker build -t azg/docker-lamp-ssh-291m .
+docker build -t azg/docker-lamp-oracle-cloud
 ```
 
 ### Run it
 
 ```
-docker run --name container1 -d -p 41061:22 --expose 80 -e MYSQL_ROOT_PASSWORD=root -e SSH_ROOT_PASSWORD=test azg/docker-lamp-ssh-291m
+docker run --name container1 -d --expose 80 -e MYSQL_ROOT_PASSWORD=root -e SSH_ROOT_PASSWORD=test azg/docker-lamp-oracle-cloud
 ```
 
 or if you have setup nginx-proxy:
