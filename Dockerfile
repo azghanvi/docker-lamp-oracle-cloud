@@ -1,13 +1,13 @@
 FROM php:8.2-apache
 ENV TIMEZONE America/Santiago
 
-RUN apk update && apk upgrade
-RUN apk add curl wget \
-    tzdata \
-    vim \
-    nano \
-    htop \
-    mc
+#RUN apk update && apk upgrade
+#RUN apk add curl wget \
+#    tzdata \
+#    vim \
+#    nano \
+#    htop \
+#    mc
     
 # enable ll
 # RUN alias ll="ls -al"
